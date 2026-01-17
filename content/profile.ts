@@ -59,7 +59,7 @@ export const profile = {
     { label: { ru: "Soft skills", en: "Soft skills" }, items: ["работа в команде", "внимательность к деталям", "грамотная коммуникация"] },
   ],
   education: {
-    ru: "РУДН, Инженерная академия — ‘Управление и информатика в технических системах’ (неоконченное высшее, 2027).",
+    ru: "РУДН, Инженерная академия — ‘Управление в технических системах’ (неоконченное высшее, 2027).",
     en: "RUDN University, Engineering Academy — ‘Control and Informatics in Technical Systems’ (incomplete higher education, 2027).",
   },
   experienceNote: {
