@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  color-scheme: dark;
+}
+
+html, body{
+  height:100%;
+}
+
+body{
+  background: #07070A;
+  color: #EDEDED;
+}
+
+::selection{
+  background: rgba(237,237,237,0.22);
+}
+
+a{
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.prose-like p{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
