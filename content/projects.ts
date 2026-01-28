@@ -104,13 +104,11 @@ export const projects: Project[] = [
         "Result: more stable checks and faster, clearer quality communication.",
       ],
     },
-    cover: {
+     cover: {
       src: "/projects/cross-browser/cover.jpg",
       alt: { ru: "Превью: рост навыков", en: "Preview: skill growth" },
     },
     gallery: [],
-      },
-    ],
   },
 
   {
