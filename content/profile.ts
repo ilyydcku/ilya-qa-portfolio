@@ -6,65 +6,99 @@ export const profile = {
     ru: "Тестировщик ПО",
     en: "QA Engineer / Software Tester",
   },
+
   location: {
     ru: "Москва",
     en: "Moscow, Russia",
   },
+
   contacts: {
-    phone: "+7 (901) 786 58 55",
     email: "moshkov_2707@mail.ru",
+    phone: "+7 (901) 786 58 55",
   },
+
   links: {
-    telegram: "", // optional
-    linkedin: "", // optional
-    github: "", // optional
+    github: "",
+    telegram: "",
+    linkedin: "",
   },
-  languages: {
-    ru: "Русский — родной",
-    en: "English — B1",
+
+  // Короткий “слоган/описание” на главной (если используется)
+  tagline: {
+    ru: "QA-инженер: качество релизов, проверка UI и API, валидация данных.",
+    en: "QA engineer: release quality, UI/API testing, data validation.",
   },
+
+  // Короткое резюме (если блок есть на About/главной)
   summary: {
     ru: [
       "QA-инженер с коммерческим опытом: Scrum, 2-недельные спринты, релизы в конце спринта.",
-      "Функциональное, кросс-браузерное, регрессионное и smoke-тестирование (UI, формы, client–server).",
+      "Функциональное, регрессионное и smoke-тестирование; кросс-браузерные проверки UI.",
       "API: Postman (GET/POST/PUT/PATCH/DELETE). Данные: Metabase + базовый SQL.",
-      "Работаю с Jira; тест-кейсы в Qase/TestRail; проверяю в DevTools и BrowserStack.",
+      "Инструменты: Jira, Qase/TestRail, BrowserStack, DevTools.",
     ],
     en: [
-      "QA Engineer with commercial experience: Scrum, 2-week sprints, releases at the end of sprint.",
-      "Functional, cross-browser, regression and smoke testing (UI, forms, client–server).",
+      "QA Engineer with commercial experience: Scrum, 2-week sprints, releases at sprint end.",
+      "Functional, regression and smoke testing; cross-browser UI checks.",
       "API: Postman (GET/POST/PUT/PATCH/DELETE). Data: Metabase + basic SQL.",
-      "Jira; test cases in Qase/TestRail; checks in DevTools and BrowserStack.",
+      "Tools: Jira, Qase/TestRail, BrowserStack, DevTools.",
     ],
   },
+
+  // Навыки (может использоваться на About)
   skills: {
     ru: [
       "Теория тестирования, тест-дизайн",
       "Функциональное / регрессионное / smoke",
       "Кросс-браузер: BrowserStack",
-      "DevTools: элементы, сеть, консоль",
+      "DevTools: Elements / Network / Console",
       "API: Postman",
       "Данные: Metabase + SQL (база)",
       "Jira, Scrum",
-      "Документация: тест-кейсы, баг-репорты",
+      "Тест-кейсы и баг-репорты",
     ],
     en: [
       "Testing theory, test design",
       "Functional / regression / smoke",
       "Cross-browser: BrowserStack",
-      "DevTools: elements, network, console",
+      "DevTools: Elements / Network / Console",
       "API: Postman",
       "Data: Metabase + SQL (basic)",
       "Jira, Scrum",
-      "Docs: test cases, bug reports",
+      "Test cases and bug reports",
     ],
   },
+
+  // ✅ ВОТ ЭТО КРИТИЧНО ДЛЯ /about: profile.tools.map(...)
+  tools: [
+    "Jira",
+    "Postman",
+    "Qase / TestRail",
+    "BrowserStack",
+    "DevTools",
+    "Metabase",
+    "SQL (basic)",
+  ],
+
+  // ✅ И это для t.blocks.tools (если используется в About)
+  blocks: {
+    tools: {
+      ru: "Инструменты",
+      en: "Tools",
+    },
+  },
+
   education: {
     ru: [
-      "РУДН, Инженерная академия — «Управление в технических систеемах (неоконченное высшее, 2027).",
+      "РУДН, Инженерная академия — «Управление в технических системах» (неоконченное высшее, 2027).",
     ],
     en: [
       "RUDN University, Engineering Academy — “Control in Technical Systems” (incomplete higher education, 2027).",
     ],
+  },
+
+  languages: {
+    ru: "Русский — родной",
+    en: "English — B1",
   },
 };
