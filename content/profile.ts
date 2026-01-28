@@ -46,47 +46,31 @@ export const profile = {
     ],
   } satisfies L<string[]>,
 
-  // ✅ About page ожидает: profile.skills.map(...)
-  // Формат: массив секций -> { label: {ru,en}, items: {ru,en} }
+  // ✅ ВАЖНО: items тут — МАССИВ строк (не {ru,en})
+  // About сам возьмёт label[lang], а items просто .map()
   skills: [
     {
       label: { ru: "Тестирование", en: "Testing" },
-      items: {
-        ru: ["Теория тестирования", "Тест-дизайн", "Функциональное / регресс / smoke"],
-        en: ["Testing theory", "Test design", "Functional / regression / smoke"],
-      },
+      items: ["Теория тестирования", "Тест-дизайн", "Функциональное / регресс / smoke"],
     },
     {
       label: { ru: "UI", en: "UI" },
-      items: {
-        ru: ["Кросс-браузер: BrowserStack", "DevTools: Elements / Network / Console"],
-        en: ["Cross-browser: BrowserStack", "DevTools: Elements / Network / Console"],
-      },
+      items: ["Кросс-браузер: BrowserStack", "DevTools: Elements / Network / Console"],
     },
     {
       label: { ru: "API", en: "API" },
-      items: {
-        ru: ["Postman: GET/POST/PUT/PATCH/DELETE", "Проверка контрактов и статусов"],
-        en: ["Postman: GET/POST/PUT/PATCH/DELETE", "Contracts & status checks"],
-      },
+      items: ["Postman: GET/POST/PUT/PATCH/DELETE", "Проверка контрактов и статусов"],
     },
     {
       label: { ru: "Данные", en: "Data" },
-      items: {
-        ru: ["Metabase", "SQL (база): SELECT / JOIN / GROUP BY"],
-        en: ["Metabase", "SQL (basic): SELECT / JOIN / GROUP BY"],
-      },
+      items: ["Metabase", "SQL (база): SELECT / JOIN / GROUP BY"],
     },
     {
       label: { ru: "Процессы", en: "Process" },
-      items: {
-        ru: ["Jira", "Qase / TestRail", "Scrum"],
-        en: ["Jira", "Qase / TestRail", "Scrum"],
-      },
+      items: ["Jira", "Qase / TestRail", "Scrum"],
     },
   ],
 
-  // ✅ About page ожидает: profile.tools.map(...)
   tools: [
     "Jira",
     "Postman",
@@ -97,16 +81,9 @@ export const profile = {
     "SQL (basic)",
   ],
 
-  // ✅ About page использует t.blocks.skills / t.blocks.tools
   blocks: {
-    skills: {
-      ru: "Навыки",
-      en: "Skills",
-    },
-    tools: {
-      ru: "Инструменты",
-      en: "Tools",
-    },
+    skills: { ru: "Навыки", en: "Skills" },
+    tools: { ru: "Инструменты", en: "Tools" },
   } satisfies {
     skills: L<string>;
     tools: L<string>;
