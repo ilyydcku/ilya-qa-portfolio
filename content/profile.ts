@@ -61,10 +61,10 @@ export const profile = {
   },
   education: {
     ru: [
-      "РУДН, Инженерная академия — «Управление и информатика в технических системах» (неоконченное высшее, 2027).",
+      "РУДН, Инженерная академия — «Управление в технических систеемах (неоконченное высшее, 2027).",
     ],
     en: [
-      "RUDN University, Engineering Academy — “Control and Informatics in Technical Systems” (incomplete higher education, 2027).",
+      "RUDN University, Engineering Academy — “Control in Technical Systems” (incomplete higher education, 2027).",
     ],
   },
 };
