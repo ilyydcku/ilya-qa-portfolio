@@ -14,135 +14,179 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "cross-browser-ui",
-    title: { ru: "Кросс‑браузерная стабильность и UI‑качество", en: "Cross‑browser stability & UI quality" },
+    slug: "regression-optimization",
+    title: {
+      ru: "Оптимизация регресса и ускорение обработки задач",
+      en: "Regression optimization & faster delivery",
+    },
     year: "2026",
-    role: { ru: "QA · Web testing", en: "QA · Web testing" },
-    tags: ["Web", "UI", "BrowserStack", "DevTools"],
+    role: {
+      ru: "QA Engineer",
+      en: "QA Engineer",
+    },
+    tags: ["Regression", "Scrum", "Quality"],
     intro: {
-      ru: "Как я проверял UI, формы и клиент‑серверное взаимодействие на разных браузерах и разрешениях.",
-      en: "How I validated UI, forms, and client–server behavior across browsers and screen sizes.",
+      ru: "Оптимизировал регрессионное тестирование и сократил время обработки задач примерно на 30%.",
+      en: "Optimized regression testing and reduced task processing time by ~30%.",
     },
     bullets: {
       ru: [
-        "UI: соответствие дизайну, состояния, тексты, крайние кейсы.",
-        "DevTools: Network/Console/Elements для поиска причин расхождений.",
-        "BrowserStack: матрица браузеров/девайсов, стабильная воспроизводимость.",
+        "Пересобрал регресс-набор: убрал дубли, приоритизировал критичные сценарии, выделил smoke.",
+        "Стандартизировал чек-листы и критерии готовности, чтобы быстрее принимать изменения.",
+        "Сократил цикл проверки за счёт фокусного прогона и повторного использования наборов кейсов.",
+        "В результате ускорил обработку задач и снизил время регресса примерно на 30%.",
       ],
       en: [
-        "UI checks: design fidelity, states, copy, edge cases.",
-        "DevTools (Network/Console/Elements) for root-cause analysis.",
-        "BrowserStack: device/browser matrix with reproducible runs.",
-      ],
-    },
-    cover: {
-      src: "/projects/cross-browser/cover.jpg",
-      alt: { ru: "Превью кейса: кросс-браузер и UI", en: "Case preview: cross-browser & UI" },
-    },
-    gallery: [
-      { src: "/projects/cross-browser/01.jpg", alt: { ru: "UI baseline", en: "UI baseline" }, caption: { ru: "Desktop baseline", en: "Desktop baseline" } },
-      { src: "/projects/cross-browser/02.jpg", alt: { ru: "Mobile layout", en: "Mobile layout" }, caption: { ru: "Mobile layout", en: "Mobile layout" } },
-      { src: "/projects/cross-browser/03.jpg", alt: { ru: "DevTools Network", en: "DevTools Network" }, caption: { ru: "Network inspection", en: "Network inspection" } },
-      { src: "/projects/cross-browser/04.jpg", alt: { ru: "Browser matrix", en: "Browser matrix" }, caption: { ru: "Browser matrix", en: "Browser matrix" } },
-    ],
-  },
-  {
-    slug: "api-postman",
-    title: { ru: "API‑тестирование в Postman", en: "API testing in Postman" },
-    year: "2026",
-    role: { ru: "QA · API testing", en: "QA · API testing" },
-    tags: ["API", "Postman", "REST"],
-    intro: {
-      ru: "Работа с коллекциями запросов и базовая проверка контрактов: коды, ответы, негативные сценарии.",
-      en: "Using request collections and validating contracts: status codes, payloads, negative scenarios.",
-    },
-    bullets: {
-      ru: [
-        "Коллекции: GET/POST/PUT/PATCH/DELETE, повторяемые прогоны.",
-        "Проверка ответов, статус‑кодов и негативных сценариев.",
-        "Сверка UI ↔ API: где фронт ожидает одно, а сервер отдаёт другое.",
-      ],
-      en: [
-        "Collections: GET/POST/PUT/PATCH/DELETE with repeatable runs.",
-        "Validating payloads, status codes, and negative scenarios.",
-        "UI ↔ API consistency checks (expectations vs actual responses).",
-      ],
-    },
-    cover: {
-      src: "/projects/api/cover.jpg",
-      alt: { ru: "Превью кейса: Postman", en: "Case preview: Postman" },
-    },
-    gallery: [
-      { src: "/projects/api/01.jpg", alt: { ru: "Postman collection", en: "Postman collection" }, caption: { ru: "Collections", en: "Collections" } },
-      { src: "/projects/api/02.jpg", alt: { ru: "API response", en: "API response" }, caption: { ru: "Response validation", en: "Response validation" } },
-      { src: "/projects/api/03.jpg", alt: { ru: "Negative test", en: "Negative test" }, caption: { ru: "Negative cases", en: "Negative cases" } },
-      { src: "/projects/api/04.jpg", alt: { ru: "UI/API mapping", en: "UI/API mapping" }, caption: { ru: "UI ↔ API mapping", en: "UI ↔ API mapping" } },
-    ],
-  },
-  {
-    slug: "data-sql-metabase",
-    title: { ru: "Валидация данных: Metabase + SQL", en: "Data validation: Metabase + SQL" },
-    year: "2026",
-    role: { ru: "QA · Data checks", en: "QA · Data checks" },
-    tags: ["SQL", "Metabase", "Data"],
-    intro: {
-      ru: "Как я проверяю корректность данных и нахожу расхождения между UI и БД.",
-      en: "How I validate data correctness and find mismatches between UI and the database.",
-    },
-    bullets: {
-      ru: [
-        "Простые запросы: SELECT/INSERT/UPDATE/DELETE/JOIN для проверки гипотез.",
-        "Проверка консистентности и бизнес‑логики на данных.",
-        "Поддержка расследований: из бага — в SQL‑проверку — в чёткий репорт.",
-      ],
-      en: [
-        "Simple queries: SELECT/INSERT/UPDATE/DELETE/JOIN to validate hypotheses.",
-        "Checking consistency and data-level business rules.",
-        "Supporting investigations: bug → SQL check → clear report.",
-      ],
-    },
-    cover: {
-      src: "/projects/data/cover.jpg",
-      alt: { ru: "Превью кейса: Metabase + SQL", en: "Case preview: Metabase + SQL" },
-    },
-    gallery: [
-      { src: "/projects/data/01.jpg", alt: { ru: "Metabase dashboard", en: "Metabase dashboard" }, caption: { ru: "Metabase view", en: "Metabase view" } },
-      { src: "/projects/data/02.jpg", alt: { ru: "SQL query", en: "SQL query" }, caption: { ru: "SQL checks", en: "SQL checks" } },
-      { src: "/projects/data/03.jpg", alt: { ru: "UI vs data", en: "UI vs data" }, caption: { ru: "UI vs data", en: "UI vs data" } },
-      { src: "/projects/data/04.jpg", alt: { ru: "Findings", en: "Findings" }, caption: { ru: "Findings", en: "Findings" } },
-    ],
-  },
-  {
-    slug: "release-regression",
-    title: { ru: "Регресс перед релизом: 100+ тест‑кейсов", en: "Release regression: 100+ test cases" },
-    year: "2026",
-    role: { ru: "QA · Regression", en: "QA · Regression" },
-    tags: ["Regression", "Qase/TestRail", "Scrum"],
-    intro: {
-      ru: "Подготовка тест‑ранов, прогон регресса, smoke после деплоя и релиз на production.",
-      en: "Preparing test runs, running regression, post-deploy smoke, and shipping to production.",
-    },
-    bullets: {
-      ru: [
-        "Чек‑листы и тест‑кейсы в Qase/TestRail; формирование тестовых прогонов.",
-        "Регресс (~100 тест‑кейсов) перед релизом; smoke после деплоя.",
-        "Баг‑репорты: шаги, ожидаемое/фактическое, приоритет, скриншоты.",
-      ],
-      en: [
-        "Checklists & test cases in Qase/TestRail; building test runs.",
-        "Regression (~100 test cases) before release; post-deploy smoke.",
-        "Bug reports with steps, expected/actual, priority, and screenshots.",
+        "Rebuilt the regression suite: removed duplicates, prioritized critical flows, выделил smoke.",
+        "Standardized checklists and DoD/DoR style criteria to speed up review.",
+        "Reduced verification cycle with focused runs and reusable test sets.",
+        "Result: ~30% faster task processing and regression cycle.",
       ],
     },
     cover: {
       src: "/projects/release/cover.jpg",
-      alt: { ru: "Превью кейса: регресс и релиз", en: "Case preview: regression & release" },
+      alt: {
+        ru: "Превью: оптимизация регресса",
+        en: "Preview: regression optimization",
+      },
     },
     gallery: [
-      { src: "/projects/release/01.jpg", alt: { ru: "Test run", en: "Test run" }, caption: { ru: "Test runs", en: "Test runs" } },
-      { src: "/projects/release/02.jpg", alt: { ru: "Checklist", en: "Checklist" }, caption: { ru: "Checklists", en: "Checklists" } },
-      { src: "/projects/release/03.jpg", alt: { ru: "Bug report", en: "Bug report" }, caption: { ru: "Bug reports", en: "Bug reports" } },
-      { src: "/projects/release/04.jpg", alt: { ru: "Release flow", en: "Release flow" }, caption: { ru: "Release workflow", en: "Release workflow" } },
+      {
+        src: "/projects/release/01.jpg",
+        alt: { ru: "Регресс-набор", en: "Regression suite" },
+        caption: { ru: "Набор тестов", en: "Test set" },
+      },
+      {
+        src: "/projects/release/02.jpg",
+        alt: { ru: "Чек-листы", en: "Checklists" },
+        caption: { ru: "Чек-листы", en: "Checklists" },
+      },
+      {
+        src: "/projects/release/03.jpg",
+        alt: { ru: "Дефекты", en: "Defects" },
+        caption: { ru: "Дефекты", en: "Defects" },
+      },
+      {
+        src: "/projects/release/04.jpg",
+        alt: { ru: "Релизный процесс", en: "Release workflow" },
+        caption: { ru: "Процесс", en: "Workflow" },
+      },
+    ],
+  },
+
+  {
+    slug: "skill-growth",
+    title: {
+      ru: "Рост навыков и внедрение улучшений в работу",
+      en: "Skill growth & improvements at work",
+    },
+    year: "2026",
+    role: {
+      ru: "QA Engineer",
+      en: "QA Engineer",
+    },
+    tags: ["Learning", "Process", "Team"],
+    intro: {
+      ru: "Стабильно повышал квалификацию и внедрял новые практики в работе после согласования с тим-лидом.",
+      en: "Consistently improved skills and introduced new practices after aligning with the team lead.",
+    },
+    bullets: {
+      ru: [
+        "Системно прокачивал навыки: теория тестирования, тест-дизайн, API и базовый SQL.",
+        "Внедрял улучшения в процесс: более понятные чек-листы, единый формат баг-репортов, прозрачные критерии проверки.",
+        "Договаривался о внедрении изменений с тим-лидом и аккуратно раскатывал их на команду.",
+        "В итоге проверки стали стабильнее, а коммуникация по качеству — быстрее и понятнее.",
+      ],
+      en: [
+        "Upgraded skills: testing theory, test design, API and basic SQL.",
+        "Improved process: clearer checklists, unified bug report format, transparent verification criteria.",
+        "Aligned changes with the team lead and rolled them out carefully to the team.",
+        "Result: more stable checks and faster, clearer quality communication.",
+      ],
+    },
+    cover: {
+      src: "/projects/cross-browser/cover.jpg",
+      alt: { ru: "Превью: рост навыков", en: "Preview: skill growth" },
+    },
+    gallery: [
+      {
+        src: "/projects/cross-browser/01.jpg",
+        alt: { ru: "Практики проверки UI", en: "UI checking practices" },
+        caption: { ru: "Практики", en: "Practices" },
+      },
+      {
+        src: "/projects/cross-browser/02.jpg",
+        alt: { ru: "Кросс-браузерные проверки", en: "Cross-browser checks" },
+        caption: { ru: "Кросс-браузер", en: "Cross-browser" },
+      },
+      {
+        src: "/projects/cross-browser/03.jpg",
+        alt: { ru: "DevTools и разбор дефектов", en: "DevTools & defect analysis" },
+        caption: { ru: "Разбор", en: "Analysis" },
+      },
+      {
+        src: "/projects/cross-browser/04.jpg",
+        alt: { ru: "Итог", en: "Summary" },
+        caption: { ru: "Итог", en: "Summary" },
+      },
+    ],
+  },
+
+  {
+    slug: "fraud-detection",
+    title: {
+      ru: "Обнаружение фрода и усиление безопасности транзакций",
+      en: "Fraud detection & transaction safety",
+    },
+    year: "2026",
+    role: {
+      ru: "QA Engineer",
+      en: "QA Engineer",
+    },
+    tags: ["Security", "Data", "Payments"],
+    intro: {
+      ru: "Обнаружил сложную фродовую механику, из-за которой деньги отмывались на неблагонадёжных пользователей, что приносило ущерб компании.",
+      en: "Detected a complex fraud mechanism that enabled money laundering to unreliable users, causing company losses.",
+    },
+    bullets: {
+      ru: [
+        "Выявил аномальные сценарии и несостыковки, указывающие на фродовую механику.",
+        "Сформулировал гипотезы и подтверждал их через проверки и анализ поведения/данных.",
+        "Разработал план мер по устранению: дополнительные проверки транзакций, контрольные сценарии и усиление валидации.",
+        "В результате повысил безопасность и снизил риск повторения подобных кейсов.",
+      ],
+      en: [
+        "Identified anomalous flows and inconsistencies indicating a fraud pattern.",
+        "Formed and validated hypotheses via checks and behavior/data analysis.",
+        "Designed a mitigation plan: additional transaction checks, control scenarios and stronger validation.",
+        "Result: improved safety and reduced recurrence risk.",
+      ],
+    },
+    cover: {
+      src: "/projects/data/cover.jpg",
+      alt: { ru: "Превью: антифрод и безопасность", en: "Preview: fraud & security" },
+    },
+    gallery: [
+      {
+        src: "/projects/data/01.jpg",
+        alt: { ru: "Проверка данных и сигналов", en: "Data & signals checks" },
+        caption: { ru: "Данные и сигналы", en: "Data & signals" },
+      },
+      {
+        src: "/projects/data/02.jpg",
+        alt: { ru: "Запросы и проверки", en: "Queries & checks" },
+        caption: { ru: "Проверки", en: "Checks" },
+      },
+      {
+        src: "/projects/data/03.jpg",
+        alt: { ru: "Сводка", en: "Summary" },
+        caption: { ru: "Сводка", en: "Summary" },
+      },
+      {
+        src: "/projects/data/04.jpg",
+        alt: { ru: "Мониторинг", en: "Monitoring" },
+        caption: { ru: "Контроль", en: "Monitoring" },
+      },
     ],
   },
 ];
