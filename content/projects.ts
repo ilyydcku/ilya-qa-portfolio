@@ -108,26 +108,7 @@ export const projects: Project[] = [
       src: "/projects/cross-browser/cover.jpg",
       alt: { ru: "Превью: рост навыков", en: "Preview: skill growth" },
     },
-    gallery: [
-      {
-        src: "/projects/cross-browser/01.jpg",
-        alt: { ru: "Практики проверки UI", en: "UI checking practices" },
-        caption: { ru: "Практики", en: "Practices" },
-      },
-      {
-        src: "/projects/cross-browser/02.jpg",
-        alt: { ru: "Кросс-браузерные проверки", en: "Cross-browser checks" },
-        caption: { ru: "Кросс-браузер", en: "Cross-browser" },
-      },
-      {
-        src: "/projects/cross-browser/03.jpg",
-        alt: { ru: "DevTools и разбор дефектов", en: "DevTools & defect analysis" },
-        caption: { ru: "Разбор", en: "Analysis" },
-      },
-      {
-        src: "/projects/cross-browser/04.jpg",
-        alt: { ru: "Итог", en: "Summary" },
-        caption: { ru: "Итог", en: "Summary" },
+    gallery: [],
       },
     ],
   },
