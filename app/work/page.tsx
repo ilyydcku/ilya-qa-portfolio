@@ -7,8 +7,8 @@ export default function Work({ searchParams }: { searchParams?: { lang?: string 
   const lang = searchParams?.lang === "en" ? "en" : "ru";
   const langQ = lang === "en" ? "?lang=en" : "";
   const t = {
-    ru: { h: "Work", sub: "4 кейса из коммерческого опыта: web, API, data, релизный регресс." },
-    en: { h: "Work", sub: "4 case studies from commercial experience: web, API, data, release regression." },
+    ru: { h: "Work", sub: "3 кейса из коммерческого опыта: web, API, data, релизный регресс." },
+    en: { h: "Work", sub: "3 case studies from commercial experience: web, API, data, release regression." },
   }[lang];
 
   return (
